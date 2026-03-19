@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(mkdir -p \"C:\\\\Coding\\\\New Github\\\\Pairup\\\\.claude\\\\skills\")",
+      "Bash(git clone:*)",
+      "Bash(find /c/Users/17600 -maxdepth 4 -name *.jpeg -newer /c/Users/17600/.bashrc)",
+      "Bash(find /c/Users/17600 -maxdepth 5 -name *.jpeg)",
+      "Bash(find /c/Users/17600 -maxdepth 5 -name *.jpg)",
+      "Read(//c//**)",
+      "Bash(ls /tmp)"
+    ]
+  }
+}

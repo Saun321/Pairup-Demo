@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    background-color: #f5f9fb;
+    color: #0d1f2d;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  /* Mobile shell — centers the 375px viewport */
+  .app-shell {
+    @apply relative flex flex-col bg-surface-subtle;
+    max-width: 430px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .page-scroll {
+    @apply flex-1 overflow-y-auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  /* Chip / tag */
+  .chip {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold;
+  }
+
+  .chip-brand {
+    @apply chip bg-brand-light text-brand;
+  }
+
+  .chip-teal {
+    @apply chip bg-teal-light text-teal;
+  }
+
+  .chip-ink {
+    @apply chip bg-surface-raised text-ink-secondary;
+  }
+
+  .chip-danger {
+    @apply chip bg-danger-light text-danger;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-brand text-white font-semibold text-sm tracking-wide transition-all active:scale-95 active:bg-brand-dark disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply flex items-center justify-center gap-2 w-full py-3.5 rounded-xl border border-border-strong text-ink font-semibold text-sm tracking-wide bg-surface transition-all active:scale-95 active:bg-surface-raised disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply flex items-center justify-center gap-2 py-2 px-4 rounded-lg text-ink-secondary font-medium text-sm transition-all active:bg-surface-raised;
+  }
+
+  /* Select chip (toggleable) */
+  .select-chip {
+    @apply cursor-pointer px-4 py-2 rounded-full text-sm font-semibold border transition-all select-none;
+  }
+
+  .select-chip-off {
+    @apply select-chip border-border bg-surface text-ink-secondary;
+  }
+
+  .select-chip-on {
+    @apply select-chip border-brand bg-brand text-white;
+  }
+
+  /* Input */
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-border bg-surface text-ink text-sm placeholder-ink-faint focus:outline-none focus:border-brand transition-colors;
+  }
+
+  /* Card */
+  .card {
+    @apply bg-surface rounded-xl shadow-card p-4;
+  }
+}
+
+/* Availability grid cells */
+.avail-cell {
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.12s;
+  user-select: none;
+}
+.avail-cell-off {
+  background: #edf4f7;
+  color: #7a95a3;
+}
+.avail-cell-on {
+  background: #1a5f7a;
+  color: #ffffff;
+}
+
+/* Sheet overlay animation */
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+.sheet-enter {
+  animation: slideUp 0.28s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeIn 0.22s ease forwards;
+}
+
+/* Celebration pulse */
+@keyframes celebrate {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.12); }
+  60%  { transform: scale(0.96); }
+  100% { transform: scale(1); }
+}
+.celebrate {
+  animation: celebrate 0.5s ease forwards;
+}
+
+/* Skeleton shimmer */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #edf4f7 25%, #d8e8ef 50%, #edf4f7 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: 6px;
+}
