@@ -173,7 +173,7 @@ One section per V1 screen in delivery order. Each section contains a screenshot 
 
 ### 9.1 Register
 
-[SCREENSHOT: Register screen]
+<img src="screenshots/02-register.png" width="300" alt="Register screen"/>
 
 Three fields — display name, email, password — with a minimum 8-character password constraint. Display name entered here carries forward as the pre-fill for Onboarding Step 1's display name field. The screen is intentionally thin: no email verification, no social login, no secondary confirmation field. Getting users to onboarding in the fewest possible taps is the only goal of this screen.
 
@@ -185,7 +185,7 @@ Three fields — display name, email, password — with a minimum 8-character pa
 
 ### 9.2 Login / Forgot Password
 
-[SCREENSHOT: Login screen]
+<img src="screenshots/01-login.png" width="300" alt="Login screen"/>
 
 Email and password fields with a "Forgot password?" link that replaces the password field inline — no navigation, no new screen. The forgot-password sub-flow collects an email and shows a confirmation state without leaving the login screen. This reduces the cognitive cost of recovering access to a single, contained interaction.
 
@@ -197,7 +197,7 @@ Email and password fields with a "Forgot password?" link that replaces the passw
 
 ### 9.3 Onboarding Step 1 — Goal
 
-[SCREENSHOT: Onboarding Step 1]
+<img src="screenshots/03-onboarding-step1.png" width="300" alt="Onboarding Step 1 — Goal"/>
 
 Captures the four core matching signals: display name, role, practice focus, target company tier, and timeline. The step progress bar is always visible. Display name is the first field because it appears on every partner-facing card — naming the user before they choose preferences prevents a blank profile at the point of first match. The product framing ("What are you preparing for?") anchors the mental model as a tool, not a social app.
 
@@ -209,7 +209,7 @@ Captures the four core matching signals: display name, role, practice focus, tar
 
 ### 9.4 Onboarding Step 2 — Level & Background
 
-[SCREENSHOT: Onboarding Step 2]
+<img src="screenshots/04-onboarding-step2.png" width="300" alt="Onboarding Step 2 — Level &amp; Background"/>
 
 Captures self-assessed level, optional weakest area, background, and optional bio and LinkedIn URL. Level is shown as selectable cards with description text rather than a dropdown — the copy ("Primarily Easy problems / just getting started") reduces ambiguity and sets accurate partner expectations before any connection is made. Every optional field is labelled with why it is collected.
 
@@ -221,7 +221,7 @@ Captures self-assessed level, optional weakest area, background, and optional bi
 
 ### 9.5 Onboarding Step 3 — Availability & Preferences
 
-[SCREENSHOT: Onboarding Step 3]
+<img src="screenshots/05-onboarding-step3.png" width="300" alt="Onboarding Step 3 — Availability &amp; Preferences"/>
 
 A 7 × 3 weekly availability grid (Mon–Sun × AM / PM / Evening) with an ET/PT/CT/MT timezone toggle and an auto-detected timezone label. Who goes first and feedback style are collected here and displayed to matches. The minimum 3-cell selection requirement is enforced with a live counter, not an error message on submit — users see their progress in real time.
 
@@ -233,7 +233,7 @@ A 7 × 3 weekly availability grid (Mon–Sun × AM / PM / Evening) with an ET/PT
 
 ### 9.6 Discover Feed — Experienced User Card + New User Card
 
-[SCREENSHOT: Discover feed — both card variants]
+<img src="screenshots/06-discover-feed.png" width="300" alt="Discover Feed"/>
 
 A ranked vertical feed of compatible candidates sorted by match percentage. Two card variants: experienced users (≥ 3 completed sessions) show trust metrics — sessions completed and show-up rate; new users replace that row with a teal "New to PairUp" badge. Every card includes a shared goals box with 1–3 specific overlaps derived from field matching, always including an availability overlap if one exists. The feed uses a persistent filter bar rather than a separate browse mode.
 
@@ -246,7 +246,7 @@ A ranked vertical feed of compatible candidates sorted by match percentage. Two 
 
 ### 9.7 User Profile Detail
 
-[SCREENSHOT: User Profile detail]
+<img src="screenshots/07-user-profile.png" width="300" alt="User Profile Detail"/>
 
 A full-page profile view reached from a Discover card's "View profile" button. Sections run top to bottom: hero (avatar, name, background badge, optional LinkedIn link), trust metrics or new-user badge, goal, level (with pip visual and weakest area chip), about (bio), weekly availability grid (read-only, with timezone toggle), and session preferences. A sticky "Send invite to [Name]" CTA is pinned at the bottom throughout scroll.
 
@@ -259,7 +259,7 @@ A full-page profile view reached from a Discover card's "View profile" button. S
 
 ### 9.8 Send Invite Modal
 
-[SCREENSHOT: Send Invite modal]
+<img src="screenshots/07b-send-invite-modal.png" width="300" alt="Send Invite Modal"/>
 
 A bottom sheet that slides up from the Discover card or the Profile detail sticky CTA. The message template auto-fills the recipient's name and the sender's role, focus, and timeline as locked chips — visually distinct from input fields. One optional free-text field (0–80 characters) lets the sender add a genuine personal observation. The template design eliminates the blank-page problem while keeping every invite honest about the sender's credentials.
 
@@ -272,7 +272,7 @@ A bottom sheet that slides up from the Discover card or the Profile detail stick
 
 ### 9.9 Matches — Received Tab
 
-[SCREENSHOT: Matches — Received tab]
+<img src="screenshots/08-matches-received.png" width="300" alt="Matches — Received tab"/>
 
 Pending incoming invites, each showing the sender's avatar, name, background badge, role and focus tags, and their optional personal note. The recipient has full context before deciding — this is the deliberate design choice that separates PairUp from blind-match tools. Accept and Decline are equal-weight buttons; neither is destructive in tone.
 
@@ -284,7 +284,7 @@ Pending incoming invites, each showing the sender's avatar, name, background bad
 
 ### 9.10 Matches — Invited & Waiting Tab
 
-[SCREENSHOT: Matches — Invited & Waiting tab]
+<img src="screenshots/08b-matches-invited.png" width="300" alt="Matches — Invited &amp; Waiting tab"/>
 
 Sent invites waiting for a response. Each card shows the recipient's profile context and a "Waiting for response" status with relative timestamp. When a recipient declines or 48 hours passes, the card grays out and the status changes to "[Name] isn't available right now" — the words "declined" and "rejected" do not appear anywhere in the product.
 
@@ -297,7 +297,7 @@ Sent invites waiting for a response. Each card shows the recipient's profile con
 
 ### 9.11 Partner Tab — List View
 
-[SCREENSHOT: Partner tab list view]
+<img src="screenshots/09-partner-list.png" width="300" alt="Partner Tab — List View"/>
 
 One card per accepted match, ordered by most recent activity. Each card shows the partner's avatar, name, background badge, shared practice focus tags, last message preview truncated to one line, relative timestamp, and an upcoming session pill if a session is booked. The list is the entry point for all ongoing relationships — nothing about a partnership lives outside this view.
 
@@ -310,7 +310,7 @@ One card per accepted match, ordered by most recent activity. Each card shows th
 
 ### 9.12 Partner Space — First Entry & Active State
 
-[SCREENSHOT: Partner Space — active state with proposal card and feedback card]
+<img src="screenshots/10-partner-jordan.png" width="300" alt="Partner Space — sent proposal banner + feedback card"/>
 
 A full-screen space scoped to one matched partner. From top to bottom: header (partner avatar + name, tap to manage/disconnect), optional upcoming session pill, optional proposal card (incoming or outgoing status), chat thread, optional post-session feedback card pinned above the input, and the message input with a persistent "+ Schedule a session" button. First entry auto-posts a system intro card and pre-loads an icebreaker template in the message input.
 
@@ -323,7 +323,7 @@ A full-screen space scoped to one matched partner. From top to bottom: header (p
 
 ### 9.13 Schedule Session Modal — Steps 1–4
 
-[SCREENSHOT: Schedule Session modal — Step 3 (slot picker)]
+<img src="screenshots/11b-schedule-modal-dates.png" width="300" alt="Schedule Session Modal — Step 3 slot picker"/>
 
 A 4-step bottom sheet: Step 1 selects interview type, Step 2 selects level, Step 3 proposes up to 3 one-hour slots from a two-week calendar, Step 4 confirms with a required meeting link. The proposer does not pick a single time — they offer a range and the partner picks. This eliminates the back-and-forth of "does this time work?" and reduces scheduling friction to a single partner decision.
 
@@ -336,7 +336,7 @@ A 4-step bottom sheet: Step 1 selects interview type, Step 2 selects level, Step
 
 ### 9.14 Post-Session Feedback Prompt
 
-[SCREENSHOT: Post-session feedback prompt]
+<img src="screenshots/10-partner-jordan.png" width="300" alt="Post-session feedback card pinned above message input"/>
 
 A three-question card pinned above the message input when a past session has feedback pending. Q1 asks whether the partner showed up (Yes / No). Q2 asks for a 1–3 star session rating with an optional free-text comment. Q3 solicits an optional app suggestion visible only to the PairUp team. The prompt does not block the chat — users can message while it is visible.
 
@@ -349,7 +349,7 @@ A three-question card pinned above the message input when a past session has fee
 
 ### 9.15 Edit Profile
 
-[SCREENSHOT: Edit Profile screen]
+<img src="screenshots/13-edit-profile.png" width="300" alt="Edit Profile screen"/>
 
 All 13 onboarding fields in a single scrollable page, pre-populated from the user's onboarding data — no blank state. The Save button is pinned at the bottom and is disabled until at least one field has changed. A "Discard changes?" confirmation dialog fires on back-press when any field is dirty. Saving immediately propagates the display name change to all partner-facing surfaces in the current session.
 
@@ -362,7 +362,7 @@ All 13 onboarding fields in a single scrollable page, pre-populated from the use
 
 ### 9.16 Settings
 
-[SCREENSHOT: Settings screen]
+<img src="screenshots/14-settings.png" width="300" alt="Settings screen"/>
 
 Three sections: Account, Notifications, and About. Account rows (change email, change password) expand inline — no navigation away from the screen. Delete account requires the user to type "DELETE" exactly before the confirm button enables. Notification toggles cover the three user-controlled types; session booking confirmation is displayed as always-on with no toggle, making the product policy visible without creating a false expectation of control.
 
