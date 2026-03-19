@@ -5,8 +5,6 @@
 
 ---
 
-# PART 1 — Product Thinking
-
 ## 1. The Problem
 
 CS students need accountability partners to survive technical interview prep — but finding one means cold outreach, social friction, and rejection risk that most students, already battling imposter syndrome, simply avoid. Existing tools match you with strangers blindly and reset after every session. PairUp fixes this by matching students on goals and availability, then building a persistent prep partnership with every friction point deliberately removed.
@@ -79,8 +77,6 @@ Free-text invite fields produce hollow messages or paralysis. A template auto-fi
 **Group matching** — One-on-one pairing solves the core accountability problem first. Group coordination complexity is a V2 problem after the bilateral model is proven.
 
 ---
-
-# PART 2 — Implementation Reference
 
 ## 7. Feature Checklist — V1 (Frontend Sprint)
 
